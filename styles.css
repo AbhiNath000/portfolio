@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section p, section ul {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Home Section Styles */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('istockphoto-1355531876-612x612.jpg') no-repeat center center/cover;
+    color: black;
+}
+
+.welcome-title h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro .name-highlight {
+    color: #ff6347;
+}
+
+.intro p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.intro .highlight {
+    color: #ff6347;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.profile-pic {
+    margin-left: 200px;
+}
+
+.profile-pic img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+/* Section Specific Styles */
+section h2 {
+    font-size: 36px;
+    color: #ff6347;
+}
+
+#about, #skills, #education, #work, #experience, #contact {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Skills Section Styles */
+#skills {
+    background-color: #e0e0e0; /* Light grey background color */
+}.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skills-list {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+.skills-list li ul {
+    padding-left: 20px;
+}
+
+/* Work Section Styles */
+#work {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    overflow-x: auto;
+}
+
+.work-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    width: max-content;
+}
+
+.work-box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 0 0 300px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.work-box h3 {
+    margin-top: 0;
+    color: #ff6347;
+}
+
+/* Education Section Styles */
+.education-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    width: max-content;
+}
+
+.education-box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 0 0 300px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.education-box h3 {
+    margin-top: 0;
+    color: #ff6347;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e5533d;
+}
+
+@media (max-width: 768px) {
+    .work-container, .education-container {
+        flex-wrap: nowrap;
+    }
+}
