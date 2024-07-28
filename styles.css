@@ -138,7 +138,7 @@ section h2 {
     color: #ff6347;
 }
 
-#about, #skills, #education, #work, #experience, #contact {
+#about, #education, #contact {
     max-width: 800px;
     margin: 0 auto;
     text-align: justify;
@@ -147,7 +147,9 @@ section h2 {
 /* Skills Section Styles */
 #skills {
     background-color: #e0e0e0; /* Light grey background color */
-}.skills-container {
+}
+
+.skills-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -238,6 +240,16 @@ section h2 {
     color: #ff6347;
 }
 
+/* Experience Section Styles */
+#experience {
+    background-color: #e0e0e0; /* Light grey background color */
+    padding: 60px 20px;
+}
+
+#experience p {
+    margin-bottom: 20px;
+}
+
 /* Contact Section Styles */
 #contact {
     background-color: #f9f9f9;
@@ -277,6 +289,18 @@ section h2 {
 
 .contact-form button:hover {
     background-color: #e5533d;
+}
+
+/* Animation Styles */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
 }
 
 @media (max-width: 768px) {
